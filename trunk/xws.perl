@@ -23,12 +23,6 @@ use POE qw( Component::Server::TCP Wheel::ReadWrite Filter::Line Driver::SysRW
 # shutdown, or signal shutdown (default).
 my $shutdown_type = 'signal';
 
-# The __END__ marker (beyond which the developer notes exist) causes
-# Perl to keep a filehandle (specifically DATA) open to the source
-# code.  This may cause problems while editing the source of a running
-# program (specificially, file locking woes), so close it.
-close DATA;
-
 # Parse apart $0 and use Cwd to find the absolute path to the program.
 # The assumption is that the crossword puzzle files share that
 # directory or aren't very far from it.  This will be replaced with a
