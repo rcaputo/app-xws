@@ -1,0 +1,188 @@
+# -*- mode: text; tab-stop-list: (2 4 6 8 10); indent-tabs-mode: t -*-
+# $Id$
+
+-------------------------------------------------------------------------------
+TABLE OF CONTENTS
+-------------------------------------------------------------------------------
+
+What XWS Is
+Requirements
+Compatibility
+Crossword Resources on the 'Net
+Troubleshooting
+Author Contact and Copyright
+End of File
+
+-------------------------------------------------------------------------------
+WHAT XWS IS
+-------------------------------------------------------------------------------
+
+Xws is a crossword puzzle engine disguised as a multi-user chat
+server.  It understands Literate Software Systems' Across Lite puzzle
+format, which is a common crossword format.
+
+-------------------------------------------------------------------------------
+REQUIREMENTS
+-------------------------------------------------------------------------------
+
+Xws requires Perl, version 5.004_04 or later, and the following Perl
+modules, which are available from the CPAN:
+
+  POE
+  Digest::MD5
+
+You can download and install the modules the hardcore tarball way.
+Visit http://www.cpan.org/ to find a close CPAN mirror.
+
+They may be installed using the CPAN shell:
+
+  % perl -MCPAN -e shell
+
+If this is your first time using the CPAN shell, you'll be asked some
+questions about your system and the archive you'd like to use.  The
+CPAN shell will present you with a prompt once these first-time
+formalities are taken care of.
+
+Once at the "cpan>" prompt, you can type:
+
+  cpan> install POE
+  cpan> install Digest::MD5
+
+Each command should build, test, and (if the tests pass) install a
+module.  When they're done:
+
+  cpan> quit
+
+To return to your shell prompt.
+
+-------------------------------------------------------------------------------
+COMPATIBILITY
+-------------------------------------------------------------------------------
+
+Xws will run wherever POE does, which is a decent subset of supported
+Perl platforms.
+
+-------------------------------------------------------------------------------
+CROSSWORD RESOURCES ON THE 'NET
+-------------------------------------------------------------------------------
+
+Across Lite puzzles are available from several 'web sites.  Here is a
+starter list of puzzle archives:
+
+  Literate Software Systems' Gallery
+  http://www.litsoft.com/across/gallery.htm
+
+  Cruciverb
+  http://www.cruciverb.com/
+
+  Aristotle
+  http://www.aristotle.net/games/crossword/index.html
+
+  Webber's Cryptic Crosswords
+  http://www.thinks.com/crosswords/wcc.htm
+
+  The New York Times' Daily Crossword
+  http://search.nytimes.com/partners/xword/puzzles.html
+
+  The New York Times' Cryptic Archive
+  http://search.nytimes.com/partners/xword/cryptic-archive.html
+
+  Crossword Puzzles
+  http://www.crossword-puzzles.co.uk/
+
+  Guardian UK Crosswords
+  http://www.guardianunlimited.co.uk/crossword/
+
+  Phil's Cryptic Crosswords
+  http://www.ozemail.com.au/%7Ebukharin/puzzles.html
+
+  Scribbler's Cryptic Crossword Place
+  http://www.iqthost.com/scribbler/
+
+  Crossword Puzzle Links
+  http://www.x-word.com/links.html
+
+Cryptic crosswords are more common in Europe than in the United
+States.  They also tend to be a lot more difficult than regular
+crosswords.  While their odd, difficult nature tends to put some
+people off, the extra challenge usually enhances group play.  Here are
+some explanations of cryptic crosswords to help acclimate people:
+
+  A Guide to Solving Cryptic Clues
+  http://search.nytimes.com/partners/xword/cryptics.html
+
+  General Knowledge and Cryptic Crosswords
+  http://www.arrakis.es/~chrisv/cjv/pagina4.htm
+
+  How to Solve Cryptic Crosswords
+  http://www.guardianunlimited.co.uk/crossword/howto/rules/0,4406,98941,00.html
+
+Please let me know if these lists could use improvement.
+
+-------------------------------------------------------------------------------
+GETTING UP AND RUNNING
+-------------------------------------------------------------------------------
+
+Here's the quick walk-through for setting up a crossword service.
+
+1. Inspect xws.conf.  This text file includes the administrative
+   passcode (requried to load new crossword puzzles) and the socket
+   xws will listen on for new connections.  At the very least, you'll
+   need to read it to find out what the administrative passcode is.
+
+2. Run xws-passcode.perl to generate a new xws passcode.  Follow the
+   prompts, and you should be all right.
+
+3. Edit xws.conf, replacing the default passcode with the new one
+   generated in step 2, and generally tweaking options options to your
+   liking.
+
+4. Acquire at least one crossword puzzle, for testing.  Place it in
+   the same directory as xws.perl.
+
+5. Run xws.perl, log in, and explore.
+
+   Note: xws.perl is not a true daemon; if you want to leave it
+   running for any length of time, invoke it as:
+
+      nohup xws.perl </dev/null >xws.stdout 2>xws.stderr
+
+-------------------------------------------------------------------------------
+TROUBLESHOOTING
+-------------------------------------------------------------------------------
+
+Stuff happens.  Here's how to work through it and come out smelling
+like a rose.  Please let me know if you encounter problems not listed
+here.
+
+
+You see the error "Can't locate [whatever] in @INC [yatta-yatta]".
+
+  Module [whatever] is not installed.  This can happen if it didn't
+  pass tests.  Try reinstalling the [whatever] module, and watch its
+  progress closely.
+
+
+The server fails to start, but it doesn't say why.  Nothing appears on
+any output stream.
+
+  Something else is using the TCP port that xws is trying to listen
+  on.  This could be a transient socket, or another xws process
+  already running.
+
+-------------------------------------------------------------------------------
+AUTHOR CONTACT & COPYRIGHT
+-------------------------------------------------------------------------------
+
+Xws is Copyright 2000 by Rocco Caputo.  All rights are reserved.  You
+may use, modify and/or distribute xws under the same terms as Perl
+itself.
+
+The author may be reached as "Rocco Caputo" <troc+xws@netrus.net>.
+
+
+-------------------------------------------------------------------------------
+END OF FILE
+-------------------------------------------------------------------------------
+
+Thanks for reading!

@@ -1,0 +1,78 @@
+# -*- mode: text; tab-stop-list: (2 4 6 8 10); indent-tabs-mode: t -*-
+# $Id$
+
+-------------------------------------------------------------------------------
+This is a list of things that people have recognized as possible fun
+features or fixes.  It is not a guarantee of future changes; it's more
+like notes kept so nobody forgets.
+
+If you would like to see something not on this list, or you want to
+contribute a patch to complete one of the to-do items, please contact
+the author.  You can reach him as:
+
+  "Rocco Caputo" <troc+xws@netrus.net>.
+-------------------------------------------------------------------------------
+
+Allow mortals to load the next puzzle when the current one is through.
+It still would require at least one puzzle being loaded by the admin
+at the start.
+
+Web interface to the admin things.
+
+Web interface to the game itself.
+
+When listing clues, only show unsolved crossing solutions.
+
+Admin feature: Retire a puzzle, and load another by name.  Admin
+feature: Retire current puzzle, and load the next.
+
+  (How should puzzles be retired?  I'm moving them to ./done by hand.)
+
+Saved state between runs.
+
+  (This would be beautiful.  It means replacing the numeric constants
+  and list references with hashrefs and strings, so that they may be
+  saved by name and reloaded without worrying about changing order.
+  The different types of gameplay in d.'s suggestion [different rooms,
+  below] makes this more interesting that I'd like to address at the
+  moment.)
+
+Dict client.
+
+Anagram client.
+
+Allow partial answers.
+
+  How small should a partial answer be?  At what point does it stop
+  being a partial answer and it start to be a "gimmee"?  And how to
+  balance gameplay among users who do and don't want clues?
+
+Allow wrong answers.
+
+  Some people think the puzzles are too easy when only correct answers
+  will go into the grid.
+
+Different rooms: people being able to do their own copy of a puzzle in
+peace or doing the hivemind thing.  or even races against competing
+groups.
+
+  (Fun things!  The directory/load features should go a long way
+  towards supporting this, and the crosswords themselves are discrete
+  objects.  I would have to maintain a "room" state per user, and
+  break up the chatter function into channels or rooms.  It's all
+  doable, but a little tedious.)
+
+One at a time.  Everyone works on the same clue, and then the clue
+advances when everyone has answered or given up.
+
+Per-user scores.
+
+  (I worry that scores and statistics may turn the game into more of a
+  competition than fun would tolerate.)
+
+  Instead of scores or "points", have a percentage of grid solved, per
+  person.  Quiet so people who don't care don't need to worry.
+
+-------------------------------------------------------------------------------
+End of File
+-------------------------------------------------------------------------------
