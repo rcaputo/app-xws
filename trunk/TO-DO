@@ -13,6 +13,10 @@ the author.  You can reach him as:
   "Rocco Caputo" <troc+xws@netrus.net>.
 -------------------------------------------------------------------------------
 
+Make a real manpage.
+
+Make it a real daemon, with logging and some junk.
+
 Allow mortals to load the next puzzle when the current one is through.
 It still would require at least one puzzle being loaded by the admin
 at the start.

@@ -2,7 +2,7 @@
 # $Id$
 
 my $version =
-  [ '$Id$ ',
+  [ '$Id$ (Release 1.00)',
     'The server is written and Copyright 2000 by Rocco Caputo. All rights ' .
     'are reserved. This program is free code; it may be distributed and/or ' .
     'modified under the same terms as Perl itself. The author may be ' .
