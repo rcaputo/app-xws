@@ -1,0 +1,91 @@
+# -*- mode: text; tab-stop-list: (2 4 6 8 10); indent-tabs-mode: t -*-
+# $Id$
+
+This file lists xws' changes, recent to oldest.
+
+-------------------------------------------------------------------------------
+Version 1.0, released on 2000.03.24
+-------------------------------------------------------------------------------
+
+The ability to ask for a specific clue, by ID (e.g., clue 1a).
+
+Display the known letters for each clue (e.g., --X--Y--), adding in
+some hangman-like look and feel.
+
+Put numbers in the grid display.
+
+Allow people to see all the clues, including solved ones.
+
+Add fuzzy clue matching, so "clue 1" will show all the available "1"
+clues (1a, 1d, both or neither).
+
+Make the word "clue" optional.  "1" is now a synonym for "clue 1".
+
+American style crosswords have large open spaces.  It's possible that
+solving one clue may incidentally solve others.  Detect and display
+this.
+
+Clues, headers and notes may contain leading, trailing or doubled up
+whitespace.  Clean this up.  They may also contain a high-bit
+copyright symbol.  Find it, and replace it with "(c)".
+
+Add the "touch" command to see changed solutions since the last time
+"touch" was invoked.
+
+Answers were obscuring numbers in the grid display.  Widen each cell
+enough to display a two-digit number and an answer letter.
+
+Add the "say" command as an alias for speaking, to please the MUD
+users.
+
+Add the "do" command as an alias for emoting, just for the hell of it.
+
+Show failed attempts at a solution, but don't say who tried them.
+
+The grid display is almost uselessly busy.  Tweak how numbers are
+displayed.
+
+The administrative features are protected by the secrecy of the
+command to activate them.  That's bad; add a password, hardcoded into
+the source.
+
+Allow administrators the ability to list directories, so they can see
+which puzzles are available.
+
+Allow administrators to load new puzzles, rather than restarting the
+server each time.
+
+Some series' of crossword puzzles include solutions and explanations
+in the notes.  Lock the notes (prevent them from being viewed) until
+the puzzle has been solved.
+
+The ls listing is virtually useless just spewed across the lines.
+Make it columnar, and make the directory to list optional (but default
+it to .).
+
+Put the executable check last in the file listing, so executable
+directories and things are marked as such.
+
+Write a proper help system.
+
+Add an option to enable ANSI color in the grid display.  This helps
+mitigate the grid's godawful busy-ness.
+
+Show which clues cross a particular clue in the clue display.
+
+Change the current directory to the program's directory at start time.
+
+Alter the admin's restart command's help to reflect the path where
+xws.perl resides.
+
+Remove the "d" or "a" in the crossed clues display, since the crossing
+clues are all perpendicular to the displayed one anyway.  Duh!
+
+Move the server configuration to a separate text file, and engineer
+the default password so that people are inclined to change it.
+
+Add a program to generate new passwords.
+
+-------------------------------------------------------------------------------
+End of File
+-------------------------------------------------------------------------------
