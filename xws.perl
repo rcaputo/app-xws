@@ -2,11 +2,11 @@
 # $Id$
 
 my $version =
-  [ '$Id$ (Release 1.00)',
-    'The server is written and Copyright 2000 by Rocco Caputo. All rights ' .
+  [ 'Release 1.00',
+    'The server is written and Copyright 2000-2010 by Rocco Caputo. All rights ' .
     'are reserved. This program is free code; it may be distributed and/or ' .
     'modified under the same terms as Perl itself. The author may be ' .
-    'reached by e-mail at <troc+xws@netrus.net>. Notes, including a to-do ' .
+    'reached by e-mail at <rcaputo@cpan.org>. Notes, including a to-do ' .
     'list, are in the comments at the end of the program. This server is ' .
     'based on the POE framework, available from your friendly neighborhood ' .
     'CPAN mirror. Thanks for reading!'

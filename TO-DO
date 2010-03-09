@@ -1,5 +1,4 @@
 # -*- mode: text; tab-stop-list: (2 4 6 8 10); indent-tabs-mode: t -*-
-# $Id$
 
 -------------------------------------------------------------------------------
 This is a list of things that people have recognized as possible fun
@@ -10,7 +9,7 @@ If you would like to see something not on this list, or you want to
 contribute a patch to complete one of the to-do items, please contact
 the author.  You can reach him as:
 
-  "Rocco Caputo" <troc+xws@netrus.net>.
+  "Rocco Caputo" <rcaputo@cpan.org>.
 -------------------------------------------------------------------------------
 
 Make a real manpage.

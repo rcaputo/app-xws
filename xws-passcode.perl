@@ -1,5 +1,4 @@
 #!/usr/bin/perl -w
-# $Id$
 
 # Generate a new passcode for xws.conf.  It doesn't change xws.conf
 # for you, though.

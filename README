@@ -1,5 +1,4 @@
 # -*- mode: text; tab-stop-list: (2 4 6 8 10); indent-tabs-mode: t -*-
-# $Id$
 
 -------------------------------------------------------------------------------
 TABLE OF CONTENTS
@@ -182,11 +181,11 @@ any output stream.
 AUTHOR CONTACT & COPYRIGHT
 -------------------------------------------------------------------------------
 
-Xws is Copyright 2000 by Rocco Caputo.  All rights are reserved.  Xws
-is free code. You may use, modify and/or distribute xws under the same
-terms as Perl itself.
+Xws is Copyright 2000-2010 by Rocco Caputo.  All rights are reserved.
+Xws is free code. You may use, modify and/or distribute xws under the
+same terms as Perl itself.
 
-The author may be reached as "Rocco Caputo" <troc+xws@netrus.net>.
+The author may be reached as "Rocco Caputo" <rcaputo@cpan.org>.
 
 
 -------------------------------------------------------------------------------
